@@ -33,6 +33,12 @@ packer.init({
 })
 
 return packer.startup(function(use)
+	use({
+		"lewis6991/impatient.nvim",
+		config = function()
+			require("impatient")
+		end,
+	})
     use("wbthomason/packer.nvim") -- Have packer manage itself
 	use({
 		'rose-pine/neovim',
