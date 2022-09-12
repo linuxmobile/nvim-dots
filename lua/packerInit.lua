@@ -61,6 +61,8 @@ return packer.startup(function(use)
 		run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
 	  }
 	use 'kyazdani42/nvim-web-devicons' -- File icons
+	use 'nvim-telescope/telescope.nvim'
+	use 'nvim-telescope/telescope-file-browser.nvim'
     -- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
