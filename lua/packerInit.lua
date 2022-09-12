@@ -65,6 +65,7 @@ return packer.startup(function(use)
 	use 'nvim-telescope/telescope-file-browser.nvim'
 	use 'windwp/nvim-autopairs'
 	use 'windwp/nvim-ts-autotag'
+	use 'norcalli/nvim-colorizer.lua'
     -- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
