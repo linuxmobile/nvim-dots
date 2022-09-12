@@ -63,6 +63,8 @@ return packer.startup(function(use)
 	use 'kyazdani42/nvim-web-devicons' -- File icons
 	use 'nvim-telescope/telescope.nvim'
 	use 'nvim-telescope/telescope-file-browser.nvim'
+	use 'windwp/nvim-autopairs'
+	use 'windwp/nvim-ts-autotag'
     -- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
