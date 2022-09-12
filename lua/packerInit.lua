@@ -42,7 +42,7 @@ return packer.startup(function(use)
 			vim.cmd('colorscheme rose-pine')
 		end
 	})
-
+	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
     -- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
