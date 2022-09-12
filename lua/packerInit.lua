@@ -50,7 +50,8 @@ return packer.startup(function(use)
 	use 'neovim/nvim-lspconfig' -- LSP
 	use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
 	use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
-	
+	use 'williamboman/mason.nvim'
+	use 'williamboman/mason-lspconfig.nvim'
     -- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
