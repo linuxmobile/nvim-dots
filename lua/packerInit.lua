@@ -43,6 +43,7 @@ return packer.startup(function(use)
 		end
 	})
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
+	use('nvim-lualine/lualine.nvim') -- Statusline
 	use 'onsails/lspkind-nvim' -- vscode-like pictograms
 	use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
 	use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
