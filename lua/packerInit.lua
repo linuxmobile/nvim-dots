@@ -56,6 +56,10 @@ return packer.startup(function(use)
 
 	use 'glepnir/lspsaga.nvim' -- LSP UIs
 	use 'L3MON4D3/LuaSnip'
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
+	  }
     -- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
