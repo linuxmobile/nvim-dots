@@ -52,6 +52,9 @@ return packer.startup(function(use)
 	use 'MunifTanjim/prettier.nvim' -- Prettier plugin for Neovim's built-in LSP client
 	use 'williamboman/mason.nvim'
 	use 'williamboman/mason-lspconfig.nvim'
+
+	use 'glepnir/lspsaga.nvim' -- LSP UIs
+	use 'L3MON4D3/LuaSnip'
     -- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
