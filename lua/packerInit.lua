@@ -34,6 +34,14 @@ packer.init({
 
 return packer.startup(function(use)
     use("wbthomason/packer.nvim") -- Have packer manage itself
+	use({
+		'rose-pine/neovim',
+		as = 'rose-pine',
+		tag = 'v1.*',
+		config = function()
+			vim.cmd('colorscheme rose-pine')
+		end
+	})
 
     -- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
