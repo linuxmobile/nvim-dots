@@ -45,6 +45,7 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim") -- Useful lua functions used ny lots of plugins
 	use 'onsails/lspkind-nvim' -- vscode-like pictograms
 	use 'hrsh7th/cmp-buffer' -- nvim-cmp source for buffer words
+	use 'hrsh7th/cmp-nvim-lsp' -- nvim-cmp source for neovim's built-in LSP
     -- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
