@@ -85,7 +85,7 @@ return packer.startup(function(use)
 	use 'antoinemadec/FixCursorHold.nvim'
 	use 'rcarriga/nvim-notify'
 	use 'RRethy/vim-illuminate'
-	
+	use 'simrat39/symbols-outline.nvim' -- Tree like view for symbols in Neovim
     -- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
