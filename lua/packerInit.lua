@@ -80,6 +80,7 @@ return packer.startup(function(use)
 	use 'akinsho/nvim-bufferline.lua'
 	use 'lewis6991/gitsigns.nvim'
 	use 'dinhhuy258/git.nvim' -- For git blame & browse
+	use 'lukas-reineke/indent-blankline.nvim'
     -- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
