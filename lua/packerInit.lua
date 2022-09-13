@@ -86,6 +86,7 @@ return packer.startup(function(use)
 	use 'rcarriga/nvim-notify'
 	use 'RRethy/vim-illuminate'
 	use 'simrat39/symbols-outline.nvim' -- Tree like view for symbols in Neovim
+	use 'numToStr/Comment.nvim'
     -- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
 	if PACKER_BOOTSTRAP then
