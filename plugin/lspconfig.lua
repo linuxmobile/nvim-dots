@@ -74,6 +74,9 @@ nvim_lsp.astro.setup {
     on_attach = on_attach,
     filetypes = { "astro" },
     cmd = { "astro-ls", "--stdio" },
+    init_options = {
+        configuration = {},
+    },
     capabilities = capabilities
   }
 
