@@ -33,7 +33,7 @@ local options = {
 	laststatus = 3,
 	sidescrolloff = 8,
 	autochdir = false,
-	shell = "/bin/zsh",
+	shell = "/usr/bin/hilbish",
 }
 
 vim.opt.shortmess:append("c")
