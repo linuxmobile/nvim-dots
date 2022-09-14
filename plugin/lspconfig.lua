@@ -70,15 +70,48 @@ nvim_lsp.tsserver.setup {
   capabilities = capabilities
 }
 
-nvim_lsp.astro.setup {
-    on_attach = on_attach,
-    filetypes = { "astro" },
-    cmd = { "astro-ls", "--stdio" },
-    init_options = {
-        configuration = {},
+nvim_lsp.eslint.setup {
+  on_attach = on_attach,
+  filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx", "vue", "astro" },
+  cmd = { "vscode-eslint-language-server", "--stdio" },
+  settings = {
+    codeAction = {
+      disableRuleComment = {
+        enable = true,
+        location = "separateLine"
+      },
+      showDocumentation = {
+        enable = true
+      }
     },
-    capabilities = capabilities
-  }
+    codeActionOnSave = {
+      enable = false,
+      mode = "all"
+    },
+    format = true,
+    nodePath = "",
+    onIgnoredFiles = "off",
+    packageManager = "npm",
+    quiet = false,
+    rulesCustomizations = {},
+    run = "onType",
+    useESLintClass = false,
+    validate = "on",
+    workingDirectory = {
+      mode = "location"
+    }
+  },
+}
+
+nvim_lsp.astro.setup {
+  on_attach = on_attach,
+  filetypes = { "astro" },
+  cmd = { "astro-ls", "--stdio" },
+  init_options = {
+      configuration = {},
+  },
+  capabilities = capabilities
+}
 
 nvim_lsp.sourcekit.setup {
   on_attach = on_attach,
@@ -102,7 +135,17 @@ nvim_lsp.sumneko_lua.setup {
   },
 }
 
-nvim_lsp.tailwindcss.setup {}
+nvim_lsp.tailwindcss.setup {
+  on_attach = on_attach,
+  cmd = { "tailwindcss-language-server", "--stdio" },
+  filetypes = { "aspnetcorerazor", "astro", "astro-markdown", "blade", "django-html", "htmldjango", "edge", "eelixir", "elixir", "ejs", "erb", "eruby", "gohtml", "haml", "handlebars", "hbs", "html", "html-eex", "heex", "jade", "leaf", "liquid", "markdown", "mdx", "mustache", "njk", "nunjucks", "php", "razor", "slim", "twig", "css", "less", "postcss", "sass", "scss", "stylus", "sugarss", "javascript", "javascriptreact", "reason", "rescript", "typescript", "typescriptreact", "vue", "svelte" },
+  init_options = {
+    userLanguages = {
+      eelixir = "html-eex",
+      eruby = "erb"
+    }
+  },
+}
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
