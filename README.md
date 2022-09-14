@@ -43,6 +43,7 @@
 - [Symbols-Outline](https://github.com/simrat39/symbols-outline.nvim)
 - [Comment](https://github.com/numToStr/Comment.nvim)
 - [Whichkey](https://github.com/folke/which-key.nvim)
+- [Presence](https://github.com/andweeb/presence.nvim)
 </details>
 
 ### Setup 
@@ -80,6 +81,8 @@ nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
 ![](./assets/whichkey.png)
 
 ![](./assets/react.png)
+
+![](./assets/discord.png)
 </details>
 
 ### Keybinding
