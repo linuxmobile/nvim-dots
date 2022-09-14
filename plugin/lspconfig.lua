@@ -138,7 +138,7 @@ nvim_lsp.sumneko_lua.setup {
 nvim_lsp.tailwindcss.setup {
   on_attach = on_attach,
   cmd = { "tailwindcss-language-server", "--stdio" },
-  filetypes = { "aspnetcorerazor", "astro", "astro-markdown", "blade", "django-html", "htmldjango", "edge", "eelixir", "elixir", "ejs", "erb", "eruby", "gohtml", "haml", "handlebars", "hbs", "html", "html-eex", "heex", "jade", "leaf", "liquid", "markdown", "mdx", "mustache", "njk", "nunjucks", "php", "razor", "slim", "twig", "css", "less", "postcss", "sass", "scss", "stylus", "sugarss", "javascript", "javascriptreact", "reason", "rescript", "typescript", "typescriptreact", "vue", "svelte" },
+  filetypes = { "astro", "astro-markdown", "html", "html-eex", "liquid", "markdown", "mdx", "njk", "nunjucks", "php", "css", "less", "postcss", "sass", "scss", "javascript", "javascriptreact", "typescript", "typescriptreact", "vue", "svelte" },
   init_options = {
     userLanguages = {
       eelixir = "html-eex",
